@@ -1,0 +1,5 @@
+﻿CREATE TABLE [Geolocation].[Phone]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [Number] VARCHAR(15) NOT NULL
+)

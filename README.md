@@ -56,6 +56,7 @@ Added initial maps:
 * ![Component API for Order Management System](docs/maps/component.png)
 * ![Container](docs/maps/container.png)
 * ![Context](docs/maps/context.png)
+* ![Data Model](docs/maps/data-model.png)
 
 ### Codebase
     We will track our codebase in github
