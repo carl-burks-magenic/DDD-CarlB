@@ -17,6 +17,14 @@ Weekly Pull Request:
 * CODE is the primary deliverable
 * Homework and final project can be done individually or in teams
 
+Additional requirement added 10:31 AM at 6/1/2021
+
+any/all of:	
+* DDD Diagrams in UML/MS/C4 Notation
+* Classes, Enums, etc. e.g. classes and namespaces
+* SQL or other schema that represents the mapping of DDD to storage
+
+
 ### Milestones
 
 #### first week, update README
@@ -39,6 +47,15 @@ It is my intent:
     * to update the language as we agree upon the terms. 
     * to populate the vision statement once more information can be ascertained.
     * to add maps as the domain exploration, and code cartography allows
+
+#### first week, additional
+
+Added initial maps:
+
+* ![Component Order Management System](.\docs\maps\component-oms.png)
+* ![Component API for Order Management System](docs/maps/component.png)
+* ![Container](docs/maps/container.png)
+* ![Context](docs/maps/context.png)
 
 ### Codebase
     We will track our codebase in github
