@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DDDBicycleShopOrderManagementService.Customer
 {
-    public class PhysicalAddress : ValueObject
+    public class PhysicalAddress : ValueObject, IPhysicalAddress
     {
         public String Street { get; private set; }
         public String StreetAdditional { get; private set; }
@@ -13,7 +13,7 @@ namespace DDDBicycleShopOrderManagementService.Customer
         public String State { get; private set; }
         public String City { get; private set; }
         public String Postal { get; private set; }
-        public PhysicalAddress(string street, string streetAdditional, string countryCode,  string state, string city, string postal)
+        public PhysicalAddress(string street, string streetAdditional, string countryCode, string state, string city, string postal)
         {
             Street = street;
             StreetAdditional = streetAdditional;
