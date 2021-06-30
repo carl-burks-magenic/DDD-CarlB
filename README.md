@@ -1,5 +1,11 @@
 # DDD Magenic Masters Class
 
+# Notes:
+
+Adding Steve Kaplin to the project.
+Changing the focus of the Project from a Bicycle Shop to a Custom Computer Build Shop (Along the lines of Dell,Gateway).
+
+
 ## Purpose
 
 Homework and final project for the DDD Magenic Masters Class
@@ -240,11 +246,9 @@ If you want to use [SSMS](https://docs.microsoft.com/en-us/sql/ssms/download-sql
 From Fork:
 An open-source sample project demonstrating how to implement Uncle Bob's Clean Architecture practice called "Screaming Architecture" in ASP.NET MVC 5.
 
+
 For step-by-step instructions on how to implement this practice, please read the following tutorial:
 http://www.matthewrenze.com/articles/clean-architecture-in-asp-net-mvc-5
-<<<<<<< HEAD
 
-If you'd like to learn more about this style of software architecture, please check out my online course <a href="https://goo.gl/rJpHLb" target="_blank">Clean Architecture: Patterns, Practices, and Principles</a>.
 
-=======
->>>>>>> parent of 5cbeba3 (Updated README.md)
+
