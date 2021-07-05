@@ -1,6 +1,6 @@
 ﻿using SharedKernel;
 
-namespace Events.ComputerBlueprintContext
+namespace Events.ComputerBlueprintEvents
 {
     public class BlueprintPublishFailureEvent : IDomainEvent
     {
