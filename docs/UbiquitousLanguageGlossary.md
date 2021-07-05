@@ -1,0 +1,1 @@
+Vendor: An entity that supplies parts

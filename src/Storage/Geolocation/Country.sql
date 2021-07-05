@@ -1,5 +1,0 @@
-﻿CREATE TABLE [Geolocation].[Country]
-(
-	[Id] INT NOT NULL PRIMARY KEY IDENTITY,
-	ISO3166Code char(3) NOT NULL
-)
