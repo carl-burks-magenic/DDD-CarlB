@@ -40,11 +40,13 @@ Budget PC 1.0.0 -
 
 ### Contexts
 
-ComputerBlueprint
+ComputerBlueprint:Draft
     * getting parts listed and organized
-ComputerFullfilment
+ComputerFullfilment:Draft
     * actually ordering parts from vendors
     * computer assembly
+VendorReturns:Draft
+    * RMAs
 Order
     * determining how many computers and what kind
     * where to ship

@@ -8,7 +8,7 @@ namespace ComputerBlueprintContext
     class ATXMotherboard: Part
     {
         public IEnumerable<IPartValidator> Validators { get; }
-        private List<IPartValidator> _validators;
+        protected List<IPartValidator> _validators;
 
     }
 
@@ -26,7 +26,6 @@ namespace ComputerBlueprintContext
             _validators = new List<IPartValidator>();
             _validators.Add(new TwoSticksOfRamValidator());
         }
-        private List<IPartValidator> _validators;
 
     }
 

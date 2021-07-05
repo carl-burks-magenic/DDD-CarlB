@@ -2,8 +2,10 @@
 
 ## Description of the Computer Shop
 
+
 ## Docs
 [Glossary](./Docs/UbiquitousLanguageGlossary.md)
+
 
 ## Project Members:
 
