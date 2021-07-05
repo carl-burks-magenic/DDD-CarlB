@@ -1,6 +1,6 @@
 ﻿using SharedKernel;
 
-namespace Events
+namespace Events.VendorReturnsEvents
 {
     public class BrokenPartShippedToVendorEvent : IDomainEvent
     {
