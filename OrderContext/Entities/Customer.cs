@@ -1,5 +1,4 @@
 ﻿using System;
-using OrderContext.Values;
 using SharedKernel;
 
 namespace OrderContext.Model
@@ -16,7 +15,6 @@ namespace OrderContext.Model
             Id = id;
         }
 
-        public Address ShippingAddress { get; set; }
         public Address BillingAddress { get; set; }
         public string Name { get; set; }
     }

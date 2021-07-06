@@ -1,4 +1,4 @@
-﻿namespace OrderContext.Values
+﻿namespace SharedKernel
 {
     public class Address
     {
