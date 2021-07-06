@@ -1,4 +1,4 @@
-﻿namespace ComputerBlueprintContext
+﻿namespace SharedKernel
 {
     public interface IEntity
     {
