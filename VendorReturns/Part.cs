@@ -16,7 +16,7 @@ namespace VendorReturns
         public string Notes { get;  }
 
         public IEnumerable<DocumentReference> DocumentReference { get; }
-        public WarehouseLocation WarehouseLocation { get;  }
+        public ILocation Location { get;  }
         public ReturnStatus ReturnStatus { get;  }
 
 

@@ -1,6 +1,6 @@
 ﻿namespace OrderContext.Model
 {
-    public class Part
+    public class Product
     {
         public string VendorIdentifier { get; set; }
         public double Cost { get; set; }

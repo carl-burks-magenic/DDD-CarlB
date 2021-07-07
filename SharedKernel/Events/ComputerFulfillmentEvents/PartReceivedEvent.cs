@@ -8,19 +8,17 @@ namespace Events.ComputerFulfilmentEvents
     public class PartReceivedEvent : IDomainEvent
     {
 
-        public PartReceivedEvent(string computerId, string partId, string documentId, string aisle, int shelfNumber)
+        public PartReceivedEvent(string computerId, string partId, string documentId, ILocation location)
         {
             ComputerId = computerId;
             PartId = partId;
             DocumentId = documentId;
-            Aisle = aisle;
-            ShelfNumber = shelfNumber;
+            Location=location.LocationDescription;
         }
 
         public string ComputerId { get; }
         public string PartId { get; }
         public string DocumentId { get; }
-        public string Aisle { get; }
-        public int ShelfNumber { get; }
+        public string Location { get; }
     }
 }

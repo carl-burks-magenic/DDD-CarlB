@@ -45,7 +45,7 @@ namespace ComputerFulfilment
             foreach(Part part in parts)
             {
                 //Implementation here
-                AddDomainEvent(new PartReceivedEvent(this.Id, part.Id, documentReference.DocumentId, part.WarehouseLocation.Aisle, part.WarehouseLocation.ShelfNumber));
+                AddDomainEvent(new PartReceivedEvent(this.Id, part.Id, documentReference.DocumentId, part.Location));
             }
         }
         public void RecordPartTested(string tester, DateTime testedOnDate, Part part)

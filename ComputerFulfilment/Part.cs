@@ -14,6 +14,6 @@ namespace ComputerFulfilment
         public VendorInfo VendorInfo { get; }
         public string PartTester { get; }
         public PartStatus status { get; }
-        public WarehouseLocation WarehouseLocation { get; }
+        public ILocation Location { get; }
     }
 }
