@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Events.ComputerFulfilmentEvents
 {
-    class PartBlockedEvent : IDomainEvent
+    public class PartBlockedEvent : IDomainEvent
     {
         public PartBlockedEvent(string setBlockedBy, DateTime blockedOnDate, string computerId, string partId,  string notes)
         {

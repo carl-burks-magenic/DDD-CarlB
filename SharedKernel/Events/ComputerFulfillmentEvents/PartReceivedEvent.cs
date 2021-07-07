@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Events.ComputerFulfilmentEvents
 {
-    class PartReceivedEvent : IDomainEvent
+    public class PartReceivedEvent : IDomainEvent
     {
 
         public PartReceivedEvent(string computerId, string partId, string documentId, string aisle, int shelfNumber)

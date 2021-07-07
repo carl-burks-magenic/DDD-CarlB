@@ -1,7 +1,7 @@
 ﻿namespace SharedKernel
 {
-    public interface IEntity
+    public interface IEntity<TIdentifier>
     {
-        public System.Guid Id { get;  }
+        public TIdentifier Id { get;  }
     }
 }

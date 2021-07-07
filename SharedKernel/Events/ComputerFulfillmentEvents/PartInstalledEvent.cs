@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace Events.ComputerFulfilmentEvents{ 
-    class PartInstalledEvent : IDomainEvent
+    public class PartInstalledEvent : IDomainEvent
     {
         public PartInstalledEvent(string installedBy, DateTime installedDate, string computerId, string partId,  string notes)
         {

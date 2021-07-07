@@ -4,7 +4,7 @@ using SharedKernel;
 
 namespace OrderFulfillment.Entity
 {
-    public class Order : IEntity
+    public class Order : IEntity<Guid>
     {
         public OrderState OrderState { get; set; }
 

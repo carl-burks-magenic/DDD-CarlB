@@ -1,8 +1,8 @@
-﻿using ComputerFulfilment.Events;
-using SharedKernel;
+﻿using SharedKernel;
 using System;
 using System.Linq;
 using System.Collections.Generic;
+using Events.ComputerFulfilmentEvents;
 
 namespace ComputerFulfilment
 {
@@ -74,7 +74,7 @@ namespace ComputerFulfilment
         public void ReplacePart(Part badPart, Part newPart)
         {
             // computer should be blocked to perform this action
-            AddDomainEvent(new ReplacementPartInstalledEvent(this.Id, badPart, newPart));
+            AddDomainEvent(new ReplacementPartInstalledEvent(this.Id, badPart.Id, newPart.Id));
         }
         public void RecordComputerFailedDiagnostics(string notes)
         {

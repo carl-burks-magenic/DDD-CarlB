@@ -6,7 +6,7 @@ namespace OrderContext.Model
     /// <summary>
     /// Contact information of the entity that created the order
     /// </summary>
-    public class Customer : IEntity
+    public class Customer : IEntity<Guid>
     {
         public Guid Id { get; private set; }
 

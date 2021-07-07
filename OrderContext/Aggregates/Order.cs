@@ -9,7 +9,7 @@ namespace OrderContext.Model
     /// An order should maybe be a collection of something more generic like an item insated of parts.
     /// We may want to sell redbulls in the future.
     /// </summary>
-    public class Order : IEntity
+    public class Order : IEntity<Guid>
     {
         public Guid Id => throw new NotImplementedException();
         public Customer Customer { get; private set; }

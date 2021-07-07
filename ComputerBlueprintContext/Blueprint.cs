@@ -6,15 +6,15 @@ using System.Linq;
 
 namespace ComputerBlueprintContext
 {
-    public class Blueprint: IEventContainer
+    public class Blueprint : IEventContainer, IEntity<string>
     {
-        public string Name { get;  }
+        public string Id { get; }
         public BlueprintStatus BlueprintStatus { get; private set; }
 
         public IEnumerable<Part> PartsList {
             get => _parts;
         }
-        private List<Part> _parts=new List<Part>();
+        private List<Part> _parts = new List<Part>();
         private readonly IEnumerable<IPartValidator> partValidators;
 
         public Blueprint(IEnumerable<IPartValidator> partValidators)
@@ -36,6 +36,8 @@ namespace ComputerBlueprintContext
         private string _reviewDate;
         public string Reviewer { get; }
         public string ReviewDate { get; }
+
+
         /// <summary>
         /// A human specifically reviewed the parts list and signs off that they work together.
         /// </summary>
@@ -44,16 +46,16 @@ namespace ComputerBlueprintContext
         {
             // update status to reviewed
             //implementation here
-            AddDomainEvent(new BlueprintReviewedEvent(this.Name, ReviewerName, DateTime.Now));
+            AddDomainEvent(new BlueprintReviewedEvent(this.Id, ReviewerName, DateTime.Now));
         }
         public void PublishBlueprint()
         {
             // Validate here
             // If valid:
             //     updatestatus to published
-            AddDomainEvent(new BlueprintPublishedEvent(this.Name));
+            AddDomainEvent(new BlueprintPublishedEvent(this.Id));
             // else:
-            AddDomainEvent(new BlueprintPublishFailureEvent(this.Name));
+            AddDomainEvent(new BlueprintPublishFailureEvent(this.Id));
         }
 
         public void PublishEvents()
