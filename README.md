@@ -4,7 +4,9 @@
 
 
 ## Docs
-[Glossary](./Docs/UbiquitousLanguageGlossary.md)
+
+1. [Glossary](./Docs/UbiquitousLanguageGlossary.md)
+1. [Diagrams](./Docs/Maps.md)
 
 
 ## Project Members:

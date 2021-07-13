@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Events.VendorEngagementEvents;
+using Events.ComputerFulfilmentEvents;
 using SharedKernel;
 
 namespace ComputerFulfilment
