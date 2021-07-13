@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using Events;
-using Events.VendorReturnsEvents;
+using Events.VendorEngagementEvents;
 using SharedKernel;
 
-namespace VendorReturns
+namespace ComputerFulfilment
 {
-    public class Part: IEventContainer
+    public class ReturnablePart: IEventContainer
     {
         public string PartId { get;  }
         public string VendorId { get;  }
