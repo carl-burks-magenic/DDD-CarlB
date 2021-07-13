@@ -10,6 +10,7 @@ graph TD;
     CB(Computer Blueprint)==Defines Computer==>CF(Computer Fulfillment)
     CF==Computer Available==>T[[Third Party Order Fulfillment]]
 ```
+![Context Map](context_map.png)
 
 ## Computer Blueprint
 
@@ -22,6 +23,8 @@ graph LR;
     A( )==Get Existing Computer Blueprints==>CB
     A( )==Create New Blueprint==>CB
 ```
+
+![Computer Blueprint](computer_blueprint.png)
 
 ## Computer Fulfillment
 
@@ -39,5 +42,10 @@ graph LR;
     CF==Return Part==>B
 ```
 
+![Computer Fulfillment](computer_fulfillment.png)
+
+
 ## Third Party Order Fulfillment
 
+Wrapper for Order Fulfillment COTS solution such as Amazon that can handle
+warehousing, orders and payments for the business.
